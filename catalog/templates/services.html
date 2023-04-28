@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Послуги{% endblock %}
+{% block content %}
+    <div class="d-flex flex-wrap gap-5 justify-content-between">
+        {% for service in services %}
+            <div class="card d-flex align-items-center border-1" style="flex-basis: 350px;">
+                <img class="card-img-top pt-2" style="max-width: 150px;"
+                     src="{% static "software.svg" %}"
+                     alt="{{ service.name }}">
+                <div class="card-body">
+                    <h5 class="card-title fs-4">{{ service.name }}</h5>
+                    <p class="card-text"
+                       style="max-height: 100px; overflow: hidden; text-align: justify;">{{ service.description }}</p>
+                </div>
+                <div class="card-footer w-100 d-flex justify-content-center align-items-center">
+                    <div class="fw-bold fs-4">{{ service.price }}₴</div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

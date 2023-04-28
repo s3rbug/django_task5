@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Головна{% endblock %}
+
+{% block content %}
+    <div>
+        <div class="container">
+            <div class="row">
+                <h2 class="col text-center fw-bold">
+                    <p class="d-inline border-bottom border-warning border-5">
+                        Ми пропонуємо
+                    </p>
+                </h2>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "graph-up-arrow.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Автоматизація бізнесу</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">аналіз бізнес-процесів</li>
+                        <li class="list-group-item">автоматизація бухгалтерського, управлінського, податкового обліків</li>
+                        <li class="list-group-item">надання доступу до хмарних сховищ</li>
+                        <li class="list-group-item">продукти компанії Microsoft</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "gear.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Налаштування ПЗ</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">первинне налаштування системи</li>
+                        <li class="list-group-item">адміністрування</li>
+                        <li class="list-group-item">налаштування інтерфейсів</li>
+                        <li class="list-group-item">перенесення залишків з попередніх інформаційних баз</li>
+                    </ul>
+                </div><div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "headset.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Підтримка</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">консультації з користування ПЗ</li>
+                        <li class="list-group-item">оновлення ПЗ</li>
+                        <li class="list-group-item">резервне копіювання</li>
+                        <li class="list-group-item">адміністрування комп’ютерних мереж та систем</li>
+                    </ul>
+                </div><div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "upc-scan.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Підключення торговельного обладнання</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">сканери штрихкодів</li>
+                        <li class="list-group-item">реєстратори розрахункових операцій</li>
+                        <li class="list-group-item">термінали збору даних</li>
+                        <li class="list-group-item">електронні ваги</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "mortarboard.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Навчання</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">сертифіковані навчальні курси</li>
+                        <li class="list-group-item">розробка інструкцій користувачів</li>
+                        <li class="list-group-item">навчання персоналу</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "code-square.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Програмування</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">автоматизація унікальних бізнес-процесів</li>
+                        <li class="list-group-item">написання зовнішніх компонент для роботи з торговим обладнанням</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "arrow-clockwise.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Інтеграція різних облікових систем</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">інтеграція облікових систем з інтернет-магазинами</li>
+                        <li class="list-group-item">обмін даними з WEB-сайтом</li>
+                    </ul>
+                </div>
+                <div class="col d-flex flex-column align-items-center mt-5">
+                    <img style="width: 50px; height: 50px" src="{% static "phone.svg" %}" class="d-flex" alt="icon">
+                    <div class="fw-bold mb-3 mt-3 text-center w-100">Мобільні додатки</div>
+                    <ul class="list-group">
+                        <li class="list-group-item">розробка мобільних додатків</li>
+                        <li class="list-group-item">налаштування мобільних додатків</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
